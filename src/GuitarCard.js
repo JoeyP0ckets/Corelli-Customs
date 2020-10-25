@@ -1,10 +1,11 @@
 import React from "react"
-import {Card} from "react-bootstrap"
+import {Card, CardImg} from "react-bootstrap"
 
-const GuitarCard = () => {
+const GuitarCard = (props) => {
   return (
- <Card style={{ width: '14rem' }}>
- <Card.Title>Guitar Name</Card.Title>
+ <Card>
+   <CardImg src={props.guitar.mainImage}></CardImg>
+  <Card.Title>{props.guitar.name}</Card.Title>
    <Card.Body>Hello I'm a card</Card.Body>
  </Card>
   )
