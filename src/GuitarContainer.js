@@ -5,7 +5,12 @@ import * as GuitarFunctions from './DataGrabber'
 const GuitarContainer = () => {
 
   const renderGuitarCards = () => {
-   return GuitarFunctions.getAllGuitars
+   let guitars = GuitarFunctions.getAllGuitars()
+   return guitars.map(guitar => 
+    <GuitarCard
+      guitar={guitar}
+    />
+    )
   }
 
   return (
