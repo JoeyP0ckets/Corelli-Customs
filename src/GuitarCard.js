@@ -3,8 +3,9 @@ import {Card} from "react-bootstrap"
 
 const GuitarCard = () => {
   return (
- <Card>
-   I'm a guitar card. With extra stuff
+ <Card style={{ width: '14rem' }}>
+ <Card.Title>Guitar Name</Card.Title>
+   <Card.Body>Hello I'm a card</Card.Body>
  </Card>
   )
 }
