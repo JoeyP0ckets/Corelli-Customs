@@ -5,8 +5,8 @@ const GuitarCard = (props) => {
   return (
  <Card>
    <CardImg src={props.guitar.mainImage}></CardImg>
-  <Card.Title>{props.guitar.name}</Card.Title>
-   <Card.Body>Hello I'm a card</Card.Body>
+   <Card.Title>{props.guitar.name}</Card.Title>
+   <Card.Body>Hello I'm a card!</Card.Body>
  </Card>
   )
 }
