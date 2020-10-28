@@ -3,7 +3,7 @@ import React from "react"
 const Bio = () => {
   return (
     <div>
-      I am a bio description
+      I make kick-ass custom guitars with incredible style and flair.  
     </div>
   )
 }
