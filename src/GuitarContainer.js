@@ -1,5 +1,6 @@
 import React from "react"
 import GuitarCard from "./GuitarCard"
+import {Container} from 'react-bootstrap'
 import * as GuitarFunctions from './DataGrabber'
 
 const GuitarContainer = () => {
@@ -14,10 +15,10 @@ const GuitarContainer = () => {
   }
 
   return (
-    <div>
+    <Container>
       Current Guitars
       {renderGuitarCards()}
-    </div>
+    </Container>
   )
 }
 
