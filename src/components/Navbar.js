@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import GuitarContainer from '../GuitarContainer'
 import Bio from '../Bio'
+import Workshop from './Workshop'
+import Demos from './Demos'
 
 
 
@@ -32,6 +34,12 @@ const GuitarNavbar = () => {
             </Route>
             <Route exact path="/GuitarsForSale">
              <GuitarContainer/>
+            </Route>
+            <Route exact path="/Demos">
+             <Demos/>
+            </Route>
+            <Route exact path="/Workshop">
+             <Workshop/>
             </Route>
           </Switch>
           </div>

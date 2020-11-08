@@ -15,8 +15,7 @@ const GuitarContainer = () => {
   }
 
   return (
-    <Container>
-      Current Guitars
+    <Container className="guitar-container">
       {renderGuitarCards()}
     </Container>
   )
