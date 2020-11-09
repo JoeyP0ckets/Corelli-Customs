@@ -3,22 +3,37 @@ import GuitarCard from "./GuitarCard"
 import {Container} from 'react-bootstrap'
 import * as GuitarFunctions from './DataGrabber'
 
-const GuitarContainer = () => {
+let guitars = GuitarFunctions.getAllGuitars()
 
-  const renderGuitarCards = () => {
-   let guitars = GuitarFunctions.getAllGuitars()
+class GuitarContainer extends React.Component {
+
+  state = {
+    guitars: []
+  }
+  
+  componentDidMount() {
+    this.setState({
+      guitars: guitars
+    })
+  }
+
+
+
+  renderGuitarCards = () => {
    return guitars.map(guitar => 
     <GuitarCard
       guitar={guitar}
     />
     )
   }
-
-  return (
-    <Container className="guitar-container">
-      {renderGuitarCards()}
-    </Container>
-  )
+  
+  render() {
+    return (
+      <Container className="guitar-container">
+      {this.renderGuitarCards()}
+      </Container>
+    )
+  }
 }
 
 export default GuitarContainer
