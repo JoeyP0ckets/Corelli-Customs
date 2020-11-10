@@ -1,9 +1,10 @@
 import React from 'react'
 
-const GuitarDetailsContainer = () => {
+const GuitarDetailsContainer = (props) => {
+  console.log(props)
   return (
-    <div>
-      I'm the guitar details Container
+    <div className="details-container">
+      <h1>Description: {props.selectedGuitar.description}</h1>
     </div>
   )
 }
