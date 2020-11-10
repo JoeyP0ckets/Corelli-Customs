@@ -10,7 +10,7 @@ const GuitarCard = (props) => {
  <Card onClick={()=>props.handleDetailsClick(props.guitar)} style={{ width: '10rem'}} className="box">
    <CardImg src={props.guitar.mainImage}></CardImg>
    <Card.Title>{props.guitar.name}</Card.Title>
-   <Card.Body>Guitar Description</Card.Body>
+   {/* <Card.Body>{props.guitar.type}</Card.Body> */}
  </Card>
   )
 }
