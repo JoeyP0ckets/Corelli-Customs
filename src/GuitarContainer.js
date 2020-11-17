@@ -1,6 +1,5 @@
 import React from "react"
 import GuitarCard from "./GuitarCard"
-import {Container} from 'react-bootstrap'
 import * as GuitarFunctions from './DataGrabber'
 import GuitarDetailsContainer from '../src/components/GuitarDetailsContainer'
 
@@ -17,10 +16,8 @@ class GuitarContainer extends React.Component {
     this.setState({
       guitars: guitars
     })
-  }
-
-
-
+  } 
+  
   renderGuitarCards = () => {
    return guitars.map(guitar => 
     <GuitarCard
@@ -39,10 +36,10 @@ class GuitarContainer extends React.Component {
   render() {
     console.log(this.state)
     return (
-      <Container className="guitar-container">
-      {this.renderGuitarCards()}
-      {this.state.selectedGuitar ? <GuitarDetailsContainer selectedGuitar={this.state.selectedGuitar}/> : null}
-      </Container>
+      <div className="guitar-container">
+        {this.renderGuitarCards()}
+        {this.state.selectedGuitar ? <GuitarDetailsContainer selectedGuitar={this.state.selectedGuitar}/> : null}
+      </div>
     )
   }
 }
