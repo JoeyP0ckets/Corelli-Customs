@@ -40,7 +40,10 @@
 }
 
 .navbar-container {
+  justify-content: center;
+}
 
+.navbar-row {
   justify-content: center;
   background-image: url(https://i.pinimg.com/originals/cc/57/c5/cc57c5606dafbcd62e5d13cadbd9d80c.jpg);
 
