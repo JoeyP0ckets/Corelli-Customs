@@ -2,7 +2,7 @@ import React from 'react'
 
 const Demos = () => {
   return (
-    <div>
+    <div className="demo-container">
       I'm the Demos
     </div>
   )
