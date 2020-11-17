@@ -1,5 +1,4 @@
 import React from 'react'
-import {Navbar, Nav} from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
