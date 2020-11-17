@@ -16,7 +16,7 @@ const GuitarNavbar = () => {
   
   return(
     <div className="navbar-container">
-        <h1>Corelli Customs</h1>
+        <h1 className="bio-text">Corelli Customs</h1>
         <Router>
           <div>
           <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;
