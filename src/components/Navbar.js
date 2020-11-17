@@ -5,7 +5,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import {Row} from "react-bootstrap"
 import GuitarContainer from '../GuitarContainer'
 import Bio from '../Bio'
 import Workshop from './Workshop'
@@ -17,18 +16,15 @@ const GuitarNavbar = () => {
   
   return(
     <div className="navbar-container">
-        
         <Router>
-          
-          
-          <Row className="navbar-row">
+          <div className="navbar-row">
           <h1 className="bio-text">Corelli Customs</h1>
           <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;
           <Link to="/GuitarsForSale">Guitars For Sale</Link>&nbsp;&nbsp;&nbsp;
           <Link to="/GuitarArchives">Guitar Archives</Link>&nbsp;&nbsp;&nbsp;
           <Link to="/Demos">Demos</Link>&nbsp;&nbsp;&nbsp;
           <Link to="/Workshop">Workshop</Link>&nbsp;&nbsp;&nbsp;
-          </Row>
+          </div>
           <Switch>
             <Route exact path="/">
                <Bio/>

@@ -46,8 +46,6 @@
 .navbar-row {
   justify-content: center;
   background-image: url(https://i.pinimg.com/originals/cc/57/c5/cc57c5606dafbcd62e5d13cadbd9d80c.jpg);
-
-  /* height: 100%;  */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,5 +66,9 @@
 .bio-text {
   color: white;
   font-family: 'Great Vibes', cursive;
+}
+
+.light-text {
+  color: white;
 }
 
