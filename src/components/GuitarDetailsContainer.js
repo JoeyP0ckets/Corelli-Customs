@@ -6,7 +6,7 @@ const GuitarDetailsContainer = (props) => {
   return (
     <div className="details-container">
       <Col>
-        <ReactPlayer url="https://youtu.be/uEnGcLJXHH0"/>
+        <ReactPlayer url={props.selectedGuitar.url} alt={props.selectedGuitar.mainImage}/>
       </Col>
       <Col><h1>Description: {props.selectedGuitar.description}</h1></Col>
     </div>
