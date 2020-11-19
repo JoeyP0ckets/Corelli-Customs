@@ -5,7 +5,7 @@ const BioVideo = () => {
   
   return(
     <div>
-      <ReactPlayer url="https://www.youtube.com/watch?v=9boMnm5X9ak"/>
+      <ReactPlayer url="https://youtu.be/uEnGcLJXHH0"/>
     </div>
   )
 }
