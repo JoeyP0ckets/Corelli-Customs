@@ -5,10 +5,14 @@ import {Col, Row} from 'react-bootstrap'
 const GuitarDetailsContainer = (props) => {
   return (
     <div className="details-container">
-      <Col>
-        {props.selectedGuitar.url ? <ReactPlayer url={props.selectedGuitar.url}/> : <img src={props.selectedGuitar.mainImage}/>}
-      </Col>
-      <Col><h1>Description: {props.selectedGuitar.description}</h1></Col>
+      <Row>
+        <Col>
+          {props.selectedGuitar.url ? <ReactPlayer url={props.selectedGuitar.url}/> : <img src={props.selectedGuitar.mainImage} alt={props.selectedGuitar.name}/>}
+        </Col>
+        <Col>
+          <h1 className="light-text">Description: {props.selectedGuitar.description}</h1>
+        </Col>
+      </Row>
     </div>
   )
 }

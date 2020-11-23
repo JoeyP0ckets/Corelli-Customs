@@ -69,9 +69,14 @@
 .demo-container {
   height:100vh; 
   width:100%;
-  background-color: black;
+  background-color: black; 
 }
 
+.details-container {
+  height:100vh; 
+  width:100%;
+  background-color: black; 
+}
 .workshop-container {
   height:100vh; 
   width:100%;
