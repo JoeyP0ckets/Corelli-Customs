@@ -18,7 +18,7 @@ const GuitarNavbar = () => {
     <div className="navbar-container">
         <Router>
           <div className="navbar-row">
-          <h1 className="bio-text">Corelli Customs</h1>
+          <h1 className="bio-text">Joe Corelli Guitars</h1>
           <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;
           <Link to="/GuitarArchives">Guitar Archives</Link>&nbsp;&nbsp;&nbsp;
           <Link to="/Demos">Demos</Link>&nbsp;&nbsp;&nbsp;
