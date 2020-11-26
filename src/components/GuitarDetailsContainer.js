@@ -10,7 +10,7 @@ const GuitarDetailsContainer = (props) => {
           {props.selectedGuitar.url ? <ReactPlayer url={props.selectedGuitar.url}/> : <img src={props.selectedGuitar.mainImage} alt={props.selectedGuitar.name}/>}
         </Col>
         <Col>
-          <h1 className="light-text">Description: {props.selectedGuitar.description}</h1>
+          <h3 className="light-text">Description: {props.selectedGuitar.description}</h3>
         </Col>
       </Row>
     </div>
