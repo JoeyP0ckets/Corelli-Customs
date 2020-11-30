@@ -1,10 +1,12 @@
 import React from "react"
+import Slideshow from "./Slideshow"
 
 
 const WorkshopContainer = () => {
   return(
     <div className="workshop-container">
-      I'm the workshop container for pictures and descriptions.
+      These are the projects I'm currently working on. 
+      <Slideshow/>
     </div>
   )
 }
